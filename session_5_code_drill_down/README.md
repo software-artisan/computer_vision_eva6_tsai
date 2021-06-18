@@ -113,7 +113,7 @@ Test phase: Average loss: 0.0202, Accuracy: 9940/10000 (99.40%)
 
 ## 1.2. Iteration 2
 
-[assignment_5_8k_parameters_ver1.ipynb](assignment_5_8k_parameters_ver1.ipynb)
+[assignment_5_8k_parameters_ver1.ipynb](assignment_5_8k_parameters_ver2.ipynb)
 
 ### 1.2.1. Target
 
@@ -213,7 +213,7 @@ Test phase: Average loss: 0.0214, Accuracy: 9934/10000 (99.34%)
 
 ## 1.3. Iteration 3
 
-[assignment_5_8k_parameters_ver1.ipynb](assignment_5_8k_parameters_ver1.ipynb)
+[assignment_5_8k_parameters_ver1.ipynb](assignment_5_8k_parameters_ver3.ipynb)
 
 ### 1.3.1. Target
 
