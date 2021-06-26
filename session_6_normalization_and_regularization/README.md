@@ -73,6 +73,30 @@ def get_norm_layer( norm_layer_type, num_channels, num_groups_for_group_norm=Non
     return nl
 ```
 
+L1 Regulararization is implemented as shown below: see [assignment_6_batch_norm_regularization.ipynb](assignment_6_batch_norm_regularization.ipynb) for further details
+
+```python
+    # if l1 regularization applies, do it..
+    if lambda_l1:
+      l1_loss = 0
+      for p in model.parameters():
+        l1_loss = l1_loss + p.abs().sum()
+      loss = loss + lambda_l1 * l1_loss    # add l1 loss..
+```
+
+L2 REgualarization is implemented as shown below:  `weight_decay` specified when the optimizer is instantiated specifies the lambda for L2 Regularization.  See [assignment_6_batch_norm_regularization.ipynb](assignment_6_batch_norm_regularization.ipynb) for further details
+
+```python
+def run_train_and_test(num_epochs, norm_type, num_groups_for_group_norm=None, lambda_l1=None, lambda_l2=None, num_batches=None) -> TrainTestLossAccuracy: 
+  model =  assignment_6_model.Net(norm_layer_type=norm_type, num_groups_for_group_norm=num_groups_for_group_norm).to(device)
+  
+  if lambda_l2:
+    optimizer = optim.SGD(model.parameters(), lr=0.1, momentum=0.9, weight_decay=lambda_l2)
+  else:
+    optimizer = optim.SGD(model.parameters(), lr=0.1, momentum=0.9)
+
+```
+
 ## 3. show all 3 calculations for  4 sample 2x2 images (image shown in the content has 3 images); so batch size is 4 and not 3
 
 ## 4. your findings for normalization techniques, (LN, BN, GN).. how they are helping you or constraining you
