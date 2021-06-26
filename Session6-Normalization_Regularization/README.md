@@ -11,9 +11,9 @@
 - [4. Your findings for normalization techniques, (LN, BN, GN).. how they are helping you or constraining you](#4-your-findings-for-normalization-techniques-ln-bn-gn-how-they-are-helping-you-or-constraining-you)
 - [5. Add all your graphs](#5-add-all-your-graphs)
 - [6. Your 3 collection-of-misclassified-images](#6-your-3-collection-of-misclassified-images)
-  - [6.1. Incorrect image predictions for NN with group normalization and layer 1 regularization](#61-incorrect-image-predictions-for-nn-with-group-normalization-and-layer-1-regularization)
-  - [6.2. Incorrect image predictions for NN with layer normalization and layer 2 regularization](#62-incorrect-image-predictions-for-nn-with-layer-normalization-and-layer-2-regularization)
-  - [6.3. Incorrect image predictions for NN with batch normalization, layer 1 and layer 2 regularization](#63-incorrect-image-predictions-for-nn-with-batch-normalization-layer-1-and-layer-2-regularization)
+  - [6.1. Incorrect image predictions for NN with group normalization and L1 regularization](#61-incorrect-image-predictions-for-nn-with-group-normalization-and-l1-regularization)
+  - [6.2. Incorrect image predictions for NN with layer normalization and L2 regularization](#62-incorrect-image-predictions-for-nn-with-layer-normalization-and-l2-regularization)
+  - [6.3. Incorrect image predictions for NN with batch normalization, L1 and L2 regularization](#63-incorrect-image-predictions-for-nn-with-batch-normalization-l1-and-l2-regularization)
 
 ## 1. What is your code all about, (what the notebook does; what model.py is doing)
 
@@ -147,18 +147,18 @@ from [assignment_6_batch_norm_regularization.ipynb](assignment_6_batch_norm_regu
 
 from [assignment_6_batch_norm_regularization.ipynb](assignment_6_batch_norm_regularization.ipynb)
 
-### 6.1. Incorrect image predictions for NN with group normalization and layer 1 regularization
+### 6.1. Incorrect image predictions for NN with group normalization and L1 regularization
 
 <!-- ![picture 8](images/3ef3596aaa31d732ad04cbbeee4e85b44ac7c2eb00d5f60eb3ab704d021f76f4.png)  -->
 
 ![picture 11](images/3c0e9b800916490a6b0e8243c9bded7e43f4a20956b48b6bbfbc85ea5c659dac.png)  
 
-### 6.2. Incorrect image predictions for NN with layer normalization and layer 2 regularization
+### 6.2. Incorrect image predictions for NN with layer normalization and L2 regularization
 
 <!-- ![picture 9](images/551a2db72197ba216802fd8541d915402d86a678346a3b98e0c1e3232d1f1802.png)   -->
 ![picture 12](images/e1b9dc28451dd6199772d700e4aa41ea20d24e97cdc6afa3ced35df1000f90b1.png)  
 
-### 6.3. Incorrect image predictions for NN with batch normalization, layer 1 and layer 2 regularization
+### 6.3. Incorrect image predictions for NN with batch normalization, L1 and L2 regularization
 
 <!-- ![picture 10](images/a56f88936a6695761ebdacc816e7f2c7802409e560d5155a38c54db8fe6dcd9b.png)   -->
-![picture 13](images/cbad068ff6cb595c95ab2aceaf7bea01ddc2f82da9560830a16b31906ce58f88.png)  
+![picture 13](images/Batch_L1_L2.png)  
